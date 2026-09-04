@@ -1,0 +1,3 @@
+import { GraduationCap } from 'lucide-react'
+import { SectionHeading } from '../ui/SectionHeading'
+export function Education(){return <section className="section"><div className="container education-grid"><SectionHeading eyebrow="05 / Education" title="Computer Engineering foundation."/><article className="education-card reveal"><GraduationCap/><div><span className="eyebrow">Istanbul Kültür University</span><h3>B.Sc. in Computer Engineering</h3><div className="education-project"><span>Graduation Project</span><h4>Analyzing Mental Fatigue Through Physiological Signals via Deep Learning Methods</h4><p>Academic project focused on investigating physiological signals and applying deep learning methods to analyze mental fatigue.</p></div></div></article></div></section>}

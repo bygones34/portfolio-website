@@ -1,0 +1,1 @@
+export function Footer(){return <footer><div className="container footer-inner"><p>Alper Dursun — Software Developer</p><p>© {new Date().getFullYear()} · Built with React, TypeScript and Tailwind CSS.</p></div></footer>}
