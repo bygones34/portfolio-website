@@ -47,6 +47,7 @@ export const skillGroups: SkillGroup[] = [
     items: [
       'RabbitMQ',
       'Docker',
+      'Kubernetes',
       'Microservices',
     ],
   },
@@ -80,7 +81,7 @@ export const skillGroups: SkillGroup[] = [
       'Claude',
       'OpenAI Codex',
       'GitHub Copilot',
-      'ChatGPT',
+      'Antigravity',
     ],
   },
 ]
