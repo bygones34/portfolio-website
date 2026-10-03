@@ -1,26 +1,35 @@
-export const skillGroups = [
+export interface SkillGroup {
+  title: string
+  items: string[]
+}
+
+export const skillGroups: SkillGroup[] = [
   {
     title: 'Backend Development',
     items: [
       'C#',
-      '.NET',
-      'ASP.NET Core',
+      '.NET 8',
       'ASP.NET Core Web API',
-      'REST APIs',
       'Entity Framework Core',
       'ADO.NET',
+      'Clean Architecture',
       'JWT Authentication',
       'FluentValidation',
       'Serilog',
     ],
   },
   {
-    title: 'Desktop Development',
+    title: 'Frontend Development',
     items: [
+      'React',
+      'TypeScript',
+      'Tailwind CSS',
+      'Vite',
+      'Angular',
       'WPF',
       'MVVM',
       'DevExpress',
-      '.NET Framework',
+      'Razor Pages',
     ],
   },
   {
@@ -29,9 +38,8 @@ export const skillGroups = [
       'Microsoft SQL Server',
       'T-SQL',
       'Stored Procedures',
-      'Complex Queries',
-      'Temporary Tables',
-      'Data Aggregation',
+      'Query Optimization',
+      'MongoDB',
     ],
   },
   {
@@ -39,6 +47,15 @@ export const skillGroups = [
     items: [
       'RabbitMQ',
       'Docker',
+      'Microservices',
+    ],
+  },
+  {
+    title: 'Enterprise Integrations',
+    items: [
+      'VSTO (Excel Add-Ins)',
+      'Office / Excel Interop',
+      '.NET Framework',
     ],
   },
   {
@@ -50,32 +67,20 @@ export const skillGroups = [
     ],
   },
   {
-    title: 'Web',
+    title: 'CI/CD & Version Control',
     items: [
-      'ASP.NET Core Razor Pages',
-      'MVC',
-      'AJAX',
-      'HTML',
-      'CSS',
-      'JavaScript',
-    ],
-  },
-  {
-    title: 'Enterprise Integrations',
-    items: [
-      'VSTO',
-      'Microsoft Excel Interop',
-      'Web Services',
-      'DataSet / DataTable',
-    ],
-  },
-  {
-    title: 'Development Tools',
-    items: [
-      'Visual Studio',
-      'SQL Server Management Studio',
       'Git',
       'GitHub',
+      'GitHub Actions',
     ],
   },
-]
+  {
+    title: 'AI Tools',
+    items: [
+      'Claude',
+      'OpenAI Codex',
+      'GitHub Copilot',
+      'ChatGPT',
+    ],
+  },
+]
