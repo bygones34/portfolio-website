@@ -1,17 +1,28 @@
 import {
   Boxes,
-  Braces,
   Database,
-  Laptop,
+  GitBranch,
+  Layout,
   Plug,
   Server,
+  Sparkles,
   TestTube2,
   Wrench,
+  type LucideIcon,
 } from 'lucide-react'
 import { skillGroups } from '../../data/skills'
 import { SectionHeading } from '../ui/SectionHeading'
 
-const icons = [Server, Laptop, Database, Boxes, TestTube2, Braces, Plug, Wrench]
+const groupIcons: Record<string, LucideIcon> = {
+  'Backend Development': Server,
+  'Frontend Development': Layout,
+  'Database & SQL': Database,
+  'Messaging & Infrastructure': Boxes,
+  'Enterprise Integrations': Plug,
+  'Testing & API Tools': TestTube2,
+  'CI/CD & Version Control': GitBranch,
+  'AI Tools': Sparkles,
+}
 
 export function Skills() {
   return (
@@ -19,12 +30,12 @@ export function Skills() {
       <div className="container">
         <SectionHeading
           eyebrow="04 / CAPABILITIES"
-          title="A practical .NET toolkit."
-          description="Technologies I use across enterprise application development, backend systems and data-intensive workflows."
+          title="A practical engineering toolkit."
+          description="Technologies I use across enterprise application development, backend systems, modern web and data workflows."
         />
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4">
-          {skillGroups.map((group, i) => {
-            const Icon = icons[i] || Wrench
+          {skillGroups.map((group) => {
+            const Icon = groupIcons[group.title] || Wrench
             return (
               <article
                 className="rounded-xl border border-zinc-800/60 bg-zinc-900/20 p-5 hover:border-zinc-700/60 transition-all flex flex-col justify-between reveal"
