@@ -20,12 +20,6 @@ The resume used by the website is located at:
 public/alperdursun-resume.pdf
 ```
 
-The resume path is configured in:
-
-```text
-src/config/site.ts
-```
-
 ## Professional Projects
 
 Some projects displayed on the website are based on professional enterprise work.
