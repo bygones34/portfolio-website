@@ -27,6 +27,7 @@ export const skillGroups: SkillGroup[] = [
       'Vite',
       'Angular',
       'WPF',
+      'WinUI 3',
       'MVVM',
       'DevExpress',
       'Razor Pages',
